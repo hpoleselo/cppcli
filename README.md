@@ -1,12 +1,12 @@
 # cppcli
 
-Package to store all small C++ programs to be used in my Linux environment and a minimal practice on CMake for building C++ projects.
+Package to store small C++ programs to be used in my Linux environment and serves as an initial practice on CMake for building C++ projects.
 
 ## Install instructions
 
 Clone this repository to wherever you want:
 
-` $ git clone `
+` $ git clone git@github.com:hpoleselo/cppcli.git`
 
 Go to the root of this project:
 
@@ -24,3 +24,8 @@ Now make sure to install the projects to your binaries in Linux:
 
 `$ sudo make install`
 
+## Easy Conversions in Linux CLI
+
+- kg2lb offers the easy conversion from kilograms to pounds
+- lb2kg converts from pounds to kilograms
+- TODO: add quaternion conversions.
