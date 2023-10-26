@@ -5,18 +5,12 @@ float kg2pd(float weight_in_kilo) {
     return weight_in_kilo * 2.20462262;
 }
 
-double convertStringToFloat(char* input_from_user) {
-    try {
-        double float_value = std::atof(input_from_user);
-        //std::cout << "Converted float value: " << float_value << std::endl;
-        return float_value;
-    } catch (const std::invalid_argument& e) {
-        std::cerr << "Invalid input: " << e.what() << std::endl;
-        throw e;
-    } catch (const std::out_of_range& e) {
-        std::cerr << "Input out of range: " << e.what() << std::endl;
-        throw e;
-    }
+// TODO: Place this in a Header file?
+double convertStringToDouble(char* input_from_user) {
+    // atof is a C function that returns a double: $ man atof
+    double double_value = std::atof(input_from_user);
+    //std::cout << "Converted float value: " << double_value << std::endl;
+    return double_value;
 } 
 
 int main(int argc, char **argv) {
@@ -34,8 +28,7 @@ int main(int argc, char **argv) {
     }
     else {
         float weight_in_kilo {0};
-        weight_in_kilo = convertStringToFloat(argv[1]);
-        //weight_in_kilo = std::stof(argv[0]);
+        weight_in_kilo = convertStringToDouble(argv[1]);
 
         if (weight_in_kilo != 0) {
             // TODO: Add the formatter from precision cout
@@ -46,7 +39,7 @@ int main(int argc, char **argv) {
         }
 
         else {
-            std::cout << "0 was provided.";
+            std::cout << "0 was provided.\n";
         }
     }
 
