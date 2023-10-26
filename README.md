@@ -29,3 +29,7 @@ Now make sure to install the projects to your binaries in Linux:
 - kg2lb offers the easy conversion from kilograms to pounds
 - lb2kg converts from pounds to kilograms
 - TODO: add quaternion conversions.
+
+## Future Implementation
+
+- Add shared functions across two different libraries to test how the referencing to this function (convertToFloat) is done.
