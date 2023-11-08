@@ -1,0 +1,1 @@
+print("This is an executable Python script from CMake.")
