@@ -4,7 +4,7 @@ double kg2pd(double weight_in_kilo) {
     // Converts kilograms to pounds
     return weight_in_kilo * 2.20462262;
 }
-df
+
 // TODO: Place this in a Header file?
 double convertStringToDouble(char* input_from_user) {
     // atof is a C function that returns a double: $ man atof
